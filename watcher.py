@@ -31,7 +31,7 @@ class Handler(FileSystemEventHandler):
 
         elif event.event_type == 'modified':
             # Take any action here when a file is modified.
-            if event.src_path.endswith("esume.md") or event.src_path.endswith("resume.css"):
+            if event.src_path.endswith(".md") or event.src_path.endswith(".css"):
                 print(f'{event.src_path} updated. Running resume.py...')
                 subprocess.run(
                     ["python", "resume.py", "JD_Lien_-_Resume.md"], check=True)

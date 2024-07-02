@@ -38,6 +38,10 @@ body {
   color: #aa0799;
 }
 
+.page-break {
+  page-break-after: always;
+}
+
 a,
 a:link,
 a:visited,
@@ -53,7 +57,7 @@ a:hover {
 
 h1 {
   text-align: center;
-  font-size: 3.25rem;
+  font-size: 2.75rem;
   margin: 0;
   padding: 0;
   color: #70356a;
@@ -67,6 +71,7 @@ h2 {
   padding: 0;
   color: #70356a;
   letter-spacing: 0.125rem;
+  text-align: left;
 }
 
 h3 {
@@ -234,7 +239,7 @@ ul {
 <!-- Summary -->
 
 <section id="summary">
-Versatile developer with over a decade in software engineering, UI design, and technical writing fields.<br>
+Versatile developer with over a decade in software engineering, UI design, and technical writing.<br>
 Passionate about creating high-quality, secure software that offers excellent user experiences.
 </section>
 
@@ -264,7 +269,7 @@ Passionate about creating high-quality, secure software that offers excellent us
   <div>
     <h3>DevOps & Best Practices</h3>
     <ul>
-      <li>Git <span class="separator">/</span> GitHub Docker
+      <li>Git <span class="separator">/</span> GitHub <span class="separator">/</span> Docker
       <li>AWS RDS <span class="separator">/</span> Azure
       <li>Apache <span class="separator">/</span> Nginx <span class="separator">/</span> IIS
       <li>Pest <span class="separator">/</span> PHPUnit <span class="separator">/</span> Vitest <span class="separator">/</span> Jest
@@ -320,6 +325,9 @@ Passionate about creating high-quality, secure software that offers excellent us
 <p>Mentored 3 junior developers through curated training materials, hosting training sessions, and pairing, fostering collaboration and enhancing skills across the team.</p>
 </li>
 </ul>
+<!-- Add Page Break for Print -->
+<div class="page-break"></div>
+
 <h3><span>Web Developer</span> <span>Apr 2012 &ndash; Nov 2019</span></h3>
 <h3><span>Edmonton Public Library</span> <span>(Edmonton, Canada)</span></h3>
 <ul>

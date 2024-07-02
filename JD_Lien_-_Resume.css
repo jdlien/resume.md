@@ -32,6 +32,10 @@ body {
   color: #aa0799;
 }
 
+.page-break {
+  page-break-after: always;
+}
+
 a,
 a:link,
 a:visited,
@@ -47,7 +51,7 @@ a:hover {
 
 h1 {
   text-align: center;
-  font-size: 3.25rem;
+  font-size: 2.75rem;
   margin: 0;
   padding: 0;
   color: #70356a;
@@ -61,6 +65,7 @@ h2 {
   padding: 0;
   color: #70356a;
   letter-spacing: 0.125rem;
+  text-align: left;
 }
 
 h3 {

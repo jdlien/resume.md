@@ -41,7 +41,7 @@
 <!-- Summary -->
 
 <section id="summary">
-Versatile developer with over a decade in software engineering, UI design, and technical writing fields.<br>
+Versatile developer with over a decade in software engineering, UI design, and technical writing.<br>
 Passionate about creating high-quality, secure software that offers excellent user experiences.
 </section>
 
@@ -72,7 +72,7 @@ Passionate about creating high-quality, secure software that offers excellent us
   <div>
     <h3>DevOps & Best Practices</h3>
     <ul>
-      <li>Git /// GitHub Docker
+      <li>Git /// GitHub /// Docker
       <li>AWS RDS /// Azure
       <li>Apache /// Nginx /// IIS
       <li>Pest /// PHPUnit /// Vitest /// Jest
@@ -116,6 +116,9 @@ Passionate about creating high-quality, secure software that offers excellent us
 - Led a major refactor of a ColdFusion codebase, modernizing and simplifying over 3,000 files into 800, enhancing code quality with reusable components and reduced complexity.
 
 - Mentored 3 junior developers through curated training materials, hosting training sessions, and pairing, fostering collaboration and enhancing skills across the team.
+
+<!-- Add Page Break for Print -->
+<div class="page-break"></div>
 
 ### <span>Web Developer</span> <span>Apr 2012 -- Nov 2019</span>
 

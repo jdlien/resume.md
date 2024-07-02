@@ -1,9 +1,8 @@
 # resume.md
 
-Write your resume in
-[Markdown](https://raw.githubusercontent.com/mikepqr/resume.md/main/resume.md),
-style it with [CSS](resume.css), output to [HTML](resume.html) and
-[PDF](resume.pdf).
+This is a fork of [mikepqr/resume.md](https://github.com/mikepqr/resume.md) customized for my own resume, which is written in Markdown and HTML, styled with a custom stylesheet.
+
+This allows you to run `watcher.py` to automatically update the `resume.html` and `resume.pdf` files when the [resume.md](resume.md) or [resume.css](resume.css) files are changed.
 
 ## Prerequisites
 
