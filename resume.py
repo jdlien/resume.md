@@ -16,6 +16,7 @@ preamble = """\
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title}</title>
 <style>
 {css}
@@ -40,7 +41,8 @@ CHROME_GUESSES_MACOS = (
 # https://stackoverflow.com/a/40674915/409879
 CHROME_GUESSES_WINDOWS = (
     # Windows 10
-    os.path.expandvars(r"%ProgramFiles(x86)%\Google\Chrome\Application\chrome.exe"),
+    os.path.expandvars(
+        r"%ProgramFiles(x86)%\Google\Chrome\Application\chrome.exe"),
     os.path.expandvars(r"%ProgramFiles%\Google\Chrome\Application\chrome.exe"),
     os.path.expandvars(r"%LocalAppData%\Google\Chrome\Application\chrome.exe"),
     # Windows 7
@@ -88,13 +90,31 @@ def title(md: str) -> str:
     """
     Return the contents of the first markdown heading in md, which we
     assume to be the title of the document.
+
+    JDL: Just hardcoded to return my name, so I have more flexibility in the md file.
     """
+    return "JD Lien"
+
     for line in md.splitlines():
         if re.match("^#[^#]", line):  # starts with exactly one '#'
             return line.lstrip("#").strip()
     raise ValueError(
         "Cannot find any lines that look like markdown h1 headings to use as the title"
     )
+
+
+def replace_triple_slashes(md: str) -> str:
+    """
+    Replace any sequence of three slashes (///) with <span class="separator">/</span> in the provided markdown content.
+    """
+    return re.sub(r'///', '<span class="separator">/</span>', md)
+
+
+def preprocess(md: str) -> str:
+    """
+    Preprocess the markdown content before converting it to HTML.
+    """
+    return replace_triple_slashes(md)
 
 
 def make_html(md: str, prefix: str = "resume") -> str:
@@ -211,6 +231,8 @@ if __name__ == "__main__":
 
     with open(args.file, encoding="utf-8") as mdfp:
         md = mdfp.read()
+        # Apply custom preprocessing to the markdown content.
+        md = preprocess(md)
     html = make_html(md, prefix=prefix)
 
     if not args.no_html:
