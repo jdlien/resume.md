@@ -85,7 +85,7 @@ Passionate about creating high-quality, secure software that offers excellent us
 
 <!-- Use pairs of h3s. Wrap the left and right half of these headings in spans --->
 
-### <span>Freelance Developer</span> <span>Aug 2022 -- Present</span>
+### <span>Freelance Developer /// Technical Writer</span> <span>Aug 2022 -- Present</span>
 
 ### <span>FullSpec Systems</span> <span>(Remote)</span>
 
