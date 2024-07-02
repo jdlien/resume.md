@@ -2,7 +2,7 @@
 
 This is a fork of [mikepqr/resume.md](https://github.com/mikepqr/resume.md) customized for my own resume, which is written in Markdown and HTML, styled with a custom stylesheet.
 
-This allows you to run `watcher.py` to automatically update the `resume.html` and `resume.pdf` files when the [resume.md](resume.md) or [resume.css](resume.css) files are changed.
+This allows you to run `watcher.py` to automatically update the `resume.html` and `resume.pdf` files when any `md` or `css` file in the project is updated, which gives the flexibility to name your markdown file as you wish.
 
 ## Prerequisites
 

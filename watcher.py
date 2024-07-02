@@ -1,3 +1,4 @@
+import os
 import time
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
@@ -32,9 +33,18 @@ class Handler(FileSystemEventHandler):
         elif event.event_type == 'modified':
             # Take any action here when a file is modified.
             if event.src_path.endswith(".md") or event.src_path.endswith(".css"):
-                print(f'{event.src_path} updated. Running resume.py...')
+                # If the file was README.md, skip
+                if event.src_path.endswith("README.md"):
+                    return None
+
+                # Split the file path into the root and extension
+                root, ext = os.path.splitext(event.src_path)
+                # Change the extension to .md
+                new_path = root + ".md"
+
+                print(f'{event.src_path} updated. Running resume.py')
                 subprocess.run(
-                    ["python", "resume.py", "JD_Lien_-_Resume.md"], check=True)
+                    ["python", "resume.py", new_path], check=True)
 
 
 if __name__ == '__main__':
