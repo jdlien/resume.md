@@ -101,15 +101,15 @@ Versatile senior software engineer combining technical expertise with a passion 
 
 - Conceived and led a successful long-term project to migrate to Laravel and Vue.js from a legacy ColdFusion intranet with 60+ apps, enhancing robustness, user experience, and maintainability.
 
-- Dramatically improved security by implementing OAuth 2 and MFA, extensive automated testing, rewriting DB queries with strict parameter-binding, reducing incidents by 90%.
+- Developed a system using database introspection to streamline CRUD interface creation across 50+ applications, reducing development time from weeks to hours for many apps, and centralizing code in a robust, well-tested library.
 
 - Established formal development practices including local dev environments, staging servers, dev databases, and rigorous version control practices using GitHub, reducing mistakes on production.
-
-- Developed a system using database introspection to streamline CRUD interface creation across 50+ applications, reducing development time from weeks to hours for many apps, and centralizing code in a robust, well-tested library.
 
 - Led a major refactor of a ColdFusion codebase, modernizing and simplifying over 3,000 files into 800, enhancing code quality with reusable components and reduced complexity.
 
 - Mentored 3 junior developers through curated training materials, hosting training sessions, and pairing, fostering collaboration and enhancing skills across the team.
+
+- Dramatically improved security by implementing OAuth 2 and MFA, extensive automated testing, rewriting DB queries with strict parameter-binding, reducing incidents by 90%.
 
 <div class="skills">
   <table>
@@ -229,7 +229,7 @@ Python, Java, C++, C#, Livewire, GitHub, SOLID, Agile, TDD
 
 ### Athabasca University
 
-Graduated with distinction. Capstone project involved a complex Laravel & Livewire-based video game.
+Graduated with distinction. Academic focus on web development and business.
 
 ### <span>Business Analyst Certificate</span> <span>2007 -- 2008</span>
 
@@ -241,43 +241,29 @@ Developed requirements gathering, project documentation, and quality assurance s
 
 Certified in networking fundamentals, routing, switching, and Cisco IOS administration.
 
-<!--
-If I have room, other things I could mention here are
-- Validator Package
-- Articles for php[architect]
-- Hashnode blog, highlighting specific articles
-- Interests in cycling, LEGO,
- -->
 <div class="page-break"></div>
 ## Projects
 
-### Validator NPM Package
+### [Validator NPM Package](https://www.npmjs.com/package/@jdlien/validator)
 
-Published NPM package for frontend validation in TypeScript with 100% Vitest test coverage.
+To improve the UX of forms, I created an NPM package, [@jdlien/validator on Github](https://github.com/jdlien/validator/), that makes it easy to add powerful frontend validation to forms. This lets users do things like type anything resembling a date and have it magically reformatted the way the developer wants. It has no dependencies, is thoroughly tested (100% code coverage with Vitest), is well-documented, and is easy to use for developers and users alike.
 
-TODO: Add Screenshots, Remove from Experience
+### [WebArtisan.info Tech Blog](https://webartisan.info/)
 
-### WebArtisan.info Blog
+A technical blog I run has articles about PHP, Tailwind, JavaScript, CSS and software careers. It won an award in a Hashnode Blogging Competition. Notable articles include:
 
-I maintain a technical blog and write articles about PHP, Tailwind, JavaScript, CSS and software careers.
+- [The Pros and Cons of Tailwind CSS](https://webartisan.info/the-pros-and-cons-of-tailwindcss)
+- [What is Dependency Injection?](https://webartisan.info/what-is-dependency-injection)
+- [How I Made My '80s Retro-Style HomePage](https://webartisan.info/how-i-made-my-80s-retro-style-homepage-part-1)
 
-TODO: Add links to most interesting articles.
+### <span>Writing for [php\[architect\]](https://www.phparch.com/) Magazine</span>
 
-### Writing for php[architect] Magazine
+I occasionally write for a magazine focused on PHP. My article about using attributes in PHP 8+ was [published in the June 2024 issue](https://www.phparch.com/magazine/2024/06/2024-06-ai-llamas/).
 
-Wrote article about using attributes in PHP 8+ published in June 2024 issue.
+### [MEGA World (Multiplayer Educational Game)](https://megaworld.game-server.ca/)
 
-### MEGA World (Multiplayer Educational Game)
+A Laravel & Livewire-based video game with a complex MySQL database for academic research into learning via gamification in collaboration with Athabasca University. I also created all the graphics assets in WebP and SVG using Photoshop and Illustrator.
 
-Developed a Laravel & Livewire-based video game with a highly complex database for academic research into gamification through education for my university capstone project.
+### [FunctionalColor Keyboard Plugin](https://github.com/jdlien/Kaleidoscope-LEDEffect-FunctionalColor)
 
-### FunctionalColor Keyboard Plugin
-
-I developed a plugin for Kaleidoscope based keyboards to change the color of keys based on type of key on the active layer. Done in C++ for the Arduino-based firmware, using highly-efficient compiler techniques to minimize memory usage.
-
-<!--
-
-bTransit could go here, eventually
-spndr
-utilities like unit converter, password generator, my-ip.ca, list randomizer
--->
+For mechanical keyboards using Kaleidoscope firmware, I created [a plugin to change the color of keys](https://github.com/jdlien/Kaleidoscope-LEDEffect-FunctionalColor) based on type of key on the active layer. Done in C++ for Arduino using lots of tricky compiler operation to achieve extreme memory efficiency.
