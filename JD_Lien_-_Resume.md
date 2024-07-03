@@ -3,7 +3,7 @@
   <div>
     <div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="icon purple"><path fill="currentColor" d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zm96 320h64c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm-32-96a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zM144 64h96c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
-      <span>Full-Stack Software Engineer</span>
+      <span>Senior Full-Stack Software Engineer</span>
     </div>
     <div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="icon purple"><path fill="currentColor" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
@@ -20,7 +20,7 @@
 
   <div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="icon purple"><path fill="currentColor" d="M16 64C16 28.7 44.7 0 80 0H304c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H80c-35.3 0-64-28.7-64-64V64zM144 448c0 8.8 7.2 16 16 16h64c8.8 0 16-7.2 16-16s-7.2-16-16-16H160c-8.8 0-16 7.2-16 16zM304 64H80V384H304V64z"/></svg>
-    <a href="tel:780-702-3114">780-702-3114</a>
+    <a href="tel:+1-780-702-3114">+1-780-702-3114</a>
   </div>
 
   <div>
@@ -39,13 +39,123 @@
   </div>
 </section>
 <!-- Summary -->
-
+## Summary
 <section id="summary">
 Versatile developer with over a decade in software engineering, UI design, and technical writing.<br>
 Passionate about creating high-quality, secure software that offers excellent user experiences.
 </section>
 
+## Experience
+
+<!-- Use pairs of h3s. Wrap the left and right half of these headings in spans --->
+
+### <span>Freelance Developer /// Technical Writer</span> <span>Aug 2022 -- Present</span>
+
+### <span>FullSpec Systems</span> <span>(Remote)</span>
+
+- Created system to rapidly ingest GTFS transit datasets from cities into MySQL & Postgres DBs.
+
+- Built JSON:API-compatible API with Laravel to serve transit data to web and mobile apps.
+
+- Designed public library registration system using Docker for quick deployment and upgrades.
+
+- Created articles for PlanetScale such as [Upgrading MySQL to v8](https://planetscale.com/blog/upgrading-to-mysql-8) and [Using SQL Joins](https://planetscale.com/blog/introduction-to-mysql-joins).
+
+- Wrote technical articles for Readyset about implementing database caching in Laravel using AWS.
+
+- Published [NPM Package](https://www.npmjs.com/package/@jdlien/validator) for frontend validation in TypeScript with 100% Vitest test coverage.
+
+<div class="skills">
+  <div>
+    <b>Languages:</b> PHP /// Laravel /// Livewire /// TypeScript /// React /// JavaScript /// TailwindCSS /// Bash
+  </div>
+  <div>
+    <b>Technologies:</b> MySQL /// Postgres /// Docker /// AWS RDS /// JSON:API /// Git /// nginx /// Vitest /// Jest
+  </div>
+</div>
+
+### <span>Lead Web Developer</span> <span>Nov 2019 -- Apr 2024</span>
+
+### <span>Edmonton Public Library</span> <span>(Edmonton, Canada/Remote)</span>
+
+- Conceived and led a successful long-term project to migrate to Laravel and Vue.js from a legacy ColdFusion intranet with 60+ apps, enhancing robustness, user experience, and maintainability.
+
+- Dramatically improved security by implementing OAuth 2 and MFA, extensive automated testing, rewriting DB queries with strict parameter-binding, reducing incidents by 90%.
+
+- Established formal development practices including local dev environments, staging servers, dev databases, and rigorous version control practices using GitHub, reducing mistakes on production.
+
+- Developed a system using database introspection to streamline CRUD interface creation across 50+ applications, reducing development time from weeks to hours for many apps, and centralizing code in a robust, well-tested library.
+
+- Led a major refactor of a ColdFusion codebase, modernizing and simplifying over 3,000 files into 800, enhancing code quality with reusable components and reduced complexity.
+
+- Mentored 3 junior developers through curated training materials, hosting training sessions, and pairing, fostering collaboration and enhancing skills across the team.
+
+<div class="skills">
+  <div>
+    <b>Languages:</b> PHP /// Laravel /// Vue.js /// TypeScript /// ColdFusion /// Tailwind /// PowerShell
+  </div>
+  <div>
+    <b>Technologies:</b> MySQL /// SQL Server /// Azure /// Git /// Apache /// IIS /// Pest /// PHPUnit /// Jasmine
+  </div>
+</div>
+
+<!-- Add Page Break for Print -->
+<div class="page-break"></div>
+
+### <span>Web Developer</span> <span>Apr 2012 -- Nov 2019</span>
+
+### <span>Edmonton Public Library</span> <span>(Edmonton, Canada)</span>
+
+- Won Innovation Award for development and successful launch of Makerspace Booking System by working closely with staff. Reduced customer booking complaints and cut staff booking time by 70%.
+
+- Initiated and developed an error management system to log user-reported issues, collect detailed feedback, and notify developers, enabling proactive resolution and improved system reliability.
+
+- Developed online registration system to automate customer account creation for 50,000+ customers, reducing staff time spent on manual account creation, while mitigating fraudulent account activity.
+
+- Built CMS, form builder, APIs, and >30 other apps in response to organizational needs for about 900 staff using responsive design and accessible design.
+
+- Demonstrated exceptional responsiveness by addressing issue reports and enhancement requests, often delivering solutions or upgrades within an hour on the same day.
+
+- Optimized SQL Server database design and tuned queries, increasing database performance for slow queries up to 10x.
+
+<div class="skills">
+  <div>
+    <b>Languages:</b> PHP /// ColdFusion /// ColdBox /// jQuery /// JavaScript /// CSS /// Sass /// PowerShell
+  </div>
+  <div>
+    <b>Technologies:</b> MySQL /// SQL Server /// Git /// Apache /// IIS /// TestBox
+  </div>
+</div>
+
+### <span>Freelance Developer /// Systems Administrator</span> <span>Sep 2011 -- Apr 2012</span>
+
+### <span>FullSpec Systems</span> <span>(Edmonton, Canada/Remote)</span>
+
+- Developed web applications for small businesses.
+
+- Created and administered WordPress and Drupal sites.
+
+- Managed network infrastructure, DNS, and email systems.
+
+- Administered Linux and Windows servers and workstations.
+
+### <span>Technical Copywriter</span> <span>Jan 2010 -- September 2011</span>
+
+### <span>Opera Software</span> <span>(Oslo, Norway)</span>
+
+- Wrote content for Opera blogs about web standards and browsers.
+
+- Collaborated with developers and product team to write documentation.
+
+- Planned and wrote marketing copy for 18 product launches and major updates.
+
+- Won international blogging competition, with posts selected from over 300 submissions.
+
+<!--
 ## Skills
+
+Skills not listed under Experience:
+Python, Java, C++, C#, Livewire, GitHub, SOLID, Agile, TDD
 
 <section id="skills">
   <div>
@@ -80,85 +190,7 @@ Passionate about creating high-quality, secure software that offers excellent us
     </ul>
   </div>
 </section>
-
-## Experience
-
-<!-- Use pairs of h3s. Wrap the left and right half of these headings in spans --->
-
-### <span>Freelance Developer /// Technical Writer</span> <span>Aug 2022 -- Present</span>
-
-### <span>FullSpec Systems</span> <span>(Remote)</span>
-
-- Created system to rapidly ingest GTFS transit datasets from cities into MySQL & Postgres DBs.
-
-- Built JSON:API-compatible API with Laravel to serve transit data to web and mobile apps.
-
-- Designed public library registration system using Docker for quick deployment and upgrades.
-
-- Created articles for PlanetScale such as [Upgrading MySQL to v8](https://planetscale.com/blog/upgrading-to-mysql-8) and [Using SQL Joins](https://planetscale.com/blog/introduction-to-mysql-joins).
-
-- Wrote technical articles for Readyset about implementing database caching in Laravel.
-
-- Published [NPM Package](https://www.npmjs.com/package/@jdlien/validator) for frontend validation in TypeScript with 100% Vitest test coverage.
-
-### <span>Lead Web Developer</span> <span>Nov 2019 -- Apr 2024</span>
-
-### <span>Edmonton Public Library</span> <span>(Edmonton, Canada/Remote)</span>
-
-- Conceived and led the successful migration to Laravel and Vue.js from the existing ColdFusion intranet with 60+ applications, enhancing robustness, user experience, and maintainability.
-
-- Dramatically improved security by implementing OAuth 2 and MFA, extensive automated testing, rewriting DB queries with strict parameter-binding, reducing incidents by 90%.
-
-- Established formal development practices including local dev environments, staging servers, dev databases, and rigorous version control practices using GitHub, reducing mistakes on production.
-
-- Developed a system using database introspection to streamline CRUD interface creation across 50+ applications, reducing development time from weeks to hours for many apps, and centralizing code in a robust, well-tested library.
-
-- Led a major refactor of a ColdFusion codebase, modernizing and simplifying over 3,000 files into 800, enhancing code quality with reusable components and reduced complexity.
-
-- Mentored 3 junior developers through curated training materials, hosting training sessions, and pairing, fostering collaboration and enhancing skills across the team.
-
-<!-- Add Page Break for Print -->
-<div class="page-break"></div>
-
-### <span>Web Developer</span> <span>Apr 2012 -- Nov 2019</span>
-
-### <span>Edmonton Public Library</span> <span>(Edmonton, Canada)</span>
-
-- Won Innovation Award for development and successful launch of Makerspace Booking System, which reduced customer booking complaints and reduced staff time handling bookings over 70%.
-
-- Initiated and developed an error management system to log user-reported issues, collect detailed feedback, and notify developers, enabling proactive resolution and improved system reliability.
-
-- Developed online registration system to automate customer account creation for 50,000+ customers, reducing staff time spent on manual account creation, while mitigating fraudulent account activity.
-
-- Built CMS, form builder, APIs, and >30 other apps in response to organizational needs for about 900 staff using responsive design and accessible design.
-
-- Demonstrated exceptional responsiveness by addressing issue reports and enhancement requests, often delivering solutions or upgrades within an hour on the same day.
-
-- Optimized SQL Server database design and tuned queries, increasing database performance for slow queries up to 10x.
-
-### <span>Freelance Developer/Systems Administrator</span> <span>Sep 2011 -- Apr 2012</span>
-
-### <span>FullSpec Systems</span> <span>(Edmonton, Canada/Remote)</span>
-
-- Developed web applications for small businesses.
-
-- Created and administered WordPress and Drupal sites.
-
-- Managed network infrastructure, DNS, and email systems.
-
-- Administered Linux and Windows servers and workstations.
-
-### <span>Technical Copywriter</span> <span>Jan 2010 -- September 2011</span>
-
-### <span>Opera Software</span> <span>(Oslo, Norway)</span>
-
-- Wrote content for Opera blogs about web standards and browsers.
-
-- Collaborated with developers and product team to write documentation.
-
-- Planned and wrote marketing copy for 18 product launches and major updates.
-
-- Won international blogging competition, with posts selected from over 300 submissions.
+-->
 
 ## Education
 
@@ -185,3 +217,31 @@ If I have room, other things I could mention here are
 - Hashnode blog, highlighting specific articles
 - Interests in cycling, LEGO,
  -->
+<div class="page-break"></div>
+## Projects
+
+### Validator NPM Package
+
+Published NPM package for frontend validation in TypeScript with 100% Vitest test coverage.
+
+TODO: Add Screenshots, Remove from Experience
+
+### WebArtisan.info Blog
+
+I maintain a technical blog and write articles about PHP, Tailwind, JavaScript, CSS and software careers.
+
+TODO: Add links to most interesting articles.
+
+### Writing for php[architect] Magazine
+
+Wrote article about using attributes in PHP 8+ published in June 2024 issue.
+
+### MEGA World (Multiplayer Educational Game)
+
+Developed a Laravel & Livewire-based video game with a highly complex database for academic research into gamification through education for my university capstone project.
+
+### FunctionalColor Keyboard Plugin
+
+I developed a plugin for Kaleidoscope based keyboards to change the color of keys based on type of key on the active layer. Done in C++ for the Arduino-based firmware, using highly-efficient compiler techniques to minimize memory usage.
+
+<!-- bTransit could go here, eventually -->
