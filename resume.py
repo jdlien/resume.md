@@ -110,11 +110,26 @@ def replace_triple_slashes(md: str) -> str:
     return re.sub(r'///', '<span class="separator">/</span>', md)
 
 
+def remove_md_comments(md: str) -> str:
+    """
+    Remove any HTML or CSS comments from the provided markdown content.
+    """
+    return re.sub(r'<!--.*?-->', '', md, flags=re.DOTALL)
+
+
+def remove_css_comments(css: str) -> str:
+    """
+    Remove any CSS comments from the provided CSS content.
+    """
+    return re.sub(r'/\*.*?\*/', '', css, flags=re.DOTALL)
+
+
 def preprocess(md: str) -> str:
     """
     Preprocess the markdown content before converting it to HTML.
     """
-    return replace_triple_slashes(md)
+    md = replace_triple_slashes(md)
+    return remove_md_comments(md)
 
 
 def make_html(md: str, prefix: str = "resume") -> str:
@@ -126,6 +141,7 @@ def make_html(md: str, prefix: str = "resume") -> str:
     try:
         with open(prefix + ".css") as cssfp:
             css = cssfp.read()
+            css = remove_css_comments(css)
     except FileNotFoundError:
         print(prefix + ".css not found. Output will by unstyled.")
         css = ""
