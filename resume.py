@@ -165,15 +165,23 @@ def make_html(md: str, prefix: str = "resume") -> str:
     """
     Compile md to HTML and prepend/append preamble/postamble.
 
-    Insert <prefix>.css if it exists.
+    Insert <prefix>.css if it exists, otherwise fall back to resume.css if it exists.
     """
+    css = ""
     try:
         with open(prefix + ".css") as cssfp:
             css = cssfp.read()
-            css = remove_css_comments(css)
     except FileNotFoundError:
-        print(prefix + ".css not found. Output will by unstyled.")
-        css = ""
+        try:
+            with open("resume.css") as cssfp:
+                css = cssfp.read()
+        except FileNotFoundError:
+            print(
+                f"Neither {prefix}.css nor resume.css found. Output will be unstyled.")
+
+    if css:
+        css = remove_css_comments(css)
+
     return "".join(
         (
             preamble.format(title=title(md), css=css),
