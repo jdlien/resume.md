@@ -48,7 +48,11 @@ Passionate about creating high-quality, secure software that offers excellent us
 
 <!--- Main version -->
 
-Senior software engineer and technical writer with 10+ years of experience in full-stack development using PHP, Laravel, Vue, and TypeScript, and more. Successfully led team to deliver enterprise applications and modernize large, legacy systems. Passionate about building high-quality, secure, and maintainable software with excellent user experience. Dedicated to creating top-notch developer tools and documentation.
+<!-- Senior software engineer and technical writer with 10+ years of experience in full-stack development using PHP, Laravel, Vue, and TypeScript, and more. Successfully led team to deliver enterprise applications and modernize large, legacy systems. Passionate about building high-quality, secure, and maintainable software with excellent user experience. Dedicated to creating top-notch developer tools and documentation. -->
+
+<!-- Apollo Scooters version -->
+
+Senior software engineer with 10+ years of experience in backend and frontend development, specializing in PHP, Laravel, Vue, and React. Extensive background in DevOps, systems administration, and technical writing. Committed to developing high-quality, secure software with outstanding user experiences. Enthusiastic supporter of Apollo Scooters and the future of urban transportation.
 
 <!--- v1, focus on leadership and mentorship
 Innovative senior software engineer with 10+ years of experience transforming legacy systems and leading full-stack development projects. Proven track record of enhancing security, optimizing performance, and streamlining development processes using PHP, Laravel, Vue, and TypeScript. Adept at mentoring junior developers and creating robust, user-centric applications that drive organizational efficiency.
@@ -69,17 +73,17 @@ Versatile senior software engineer combining technical expertise with a passion 
 
 ### <span>FullSpec Systems</span> <span>(Remote)</span>
 
-- Created system to rapidly ingest GTFS transit datasets from cities into MySQL & Postgres DBs.
+- Designed and created cloud backend system to rapidly ingest GTFS transit datasets from cities into MySQL & Postgres DBs.
 
-- Built JSON:API-compatible API with Laravel to serve transit data to web and mobile apps.
+- Built JSON:API-compatible API on top of Laravel to serve transit data to web and mobile apps.
 
-- Designed public library registration system using Docker for quick deployment and upgrades.
+- Designed public library registration deployment system using Docker for quick deployment and upgrades.
 
-- Created articles for PlanetScale such as [Upgrading MySQL to v8](https://planetscale.com/blog/upgrading-to-mysql-8) and [Using SQL Joins](https://planetscale.com/blog/introduction-to-mysql-joins).
+- Wrote several technical articles for PlanetScale such as [Upgrading MySQL to v8](https://planetscale.com/blog/upgrading-to-mysql-8) and [Using SQL Joins](https://planetscale.com/blog/introduction-to-mysql-joins).
 
-- Wrote technical articles for Readyset about implementing database caching in Laravel using AWS.
+- Wrote technical articles for Readyset focused on implementing effective database caching in Laravel using AWS.
 
-- Published [NPM Package](https://www.npmjs.com/package/@jdlien/validator) for frontend validation in TypeScript with 100% Vitest test coverage.
+- Created and published [NPM Package](https://www.npmjs.com/package/@jdlien/validator) for frontend validation in TypeScript with 100% Vitest test coverage.
 
 <div class="skills">
   <table>
@@ -99,17 +103,17 @@ Versatile senior software engineer combining technical expertise with a passion 
 
 ### <span>Edmonton Public Library</span> <span>(Edmonton, Canada/Remote)</span>
 
-- Conceived and led a successful long-term project to migrate to Laravel and Vue.js from a legacy ColdFusion intranet with 60+ apps, enhancing robustness, user experience, and maintainability.
+- Conceived and led a successful long-term project to migrate all existing applications to Laravel and Vue.js from a legacy ColdFusion intranet with 60+ apps, enhancing robustness, user experience, and maintainability.
 
-- Developed a system using database introspection to streamline CRUD interface creation across 50+ applications, reducing development time from weeks to hours for many apps, and centralizing code in a robust, well-tested library.
+- Developed a system using database introspection to streamline CRUD interface creation across 50+ applications, reducing development time from weeks to hours for many apps, significantly lowering developer maintenance overhead, and centralizing code in a robust, well-tested library.
 
-- Established formal development practices including local dev environments, staging servers, dev databases, and rigorous version control practices using GitHub, reducing mistakes on production.
+- Established formal development practices including local dev environments, staging servers, dev databases, and rigorous version control practices using GitHub, significantly reducing mistakes on production deployments.
 
-- Led a major refactor of a ColdFusion codebase, modernizing and simplifying over 3,000 files into 800, enhancing code quality with reusable components and reduced complexity.
+- Led a critical refactoring initiative of a major ColdFusion codebase, modernizing and simplifying over 3,000 files into 800, enhancing code quality with reusable components and reduced complexity.
 
 - Mentored 3 junior developers through curated training materials, hosting training sessions, and pairing, fostering collaboration and enhancing skills across the team.
 
-- Dramatically improved security by implementing OAuth 2 and MFA, extensive automated testing, rewriting DB queries with strict parameter-binding, reducing incidents by 90%.
+- Dramatically improved security by implementing OAuth 2 and MFA, extensive automated testing, rewriting DB queries with strict parameter-binding, reducing total security incidents by 90%.
 
 <div class="skills">
   <table>
@@ -132,17 +136,17 @@ Versatile senior software engineer combining technical expertise with a passion 
 
 ### <span>Edmonton Public Library</span> <span>(Edmonton, Canada)</span>
 
-- Won Innovation Award for development and successful launch of Makerspace Booking System by working closely with staff. Reduced customer booking complaints and cut staff booking time by 70%.
+- Won Innovation Award for development and successful launch of Makerspace Booking System by working closely with staff to collect the most significant user pain points. Reduced customer booking complaints and cut staff booking time by 70%.
 
 - Initiated and developed an error management system to log user-reported issues, collect detailed feedback, and notify developers, enabling proactive resolution and improved system reliability.
 
 - Developed online registration system to automate customer account creation for 50,000+ customers, reducing staff time spent on manual account creation, while mitigating fraudulent account activity.
 
-- Built CMS, form builder, APIs, and >30 other apps in response to organizational needs for about 900 staff using responsive design and accessible design.
+- Built CMS, form builder, APIs, and 30+ other apps in response to organizational needs for 900 staff members using responsive and accessible design patterns.
 
 - Demonstrated exceptional responsiveness by addressing issue reports and enhancement requests, often delivering solutions or upgrades within an hour on the same day.
 
-- Optimized SQL Server database design and tuned queries, increasing database performance for slow queries up to 10x.
+- Optimized SQL Server database design and tuned queries, increasing production database performance for slow queries up to 10x.
 
 <div class="skills">
   <table>
