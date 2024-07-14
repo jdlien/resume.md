@@ -28,8 +28,10 @@ body {
 
 .icon {
   display: inline-block;
+  padding-bottom: 0.015em;
+  /* Padding instead of margin prevents icon from clipping in PDF */
+  padding-right: 0.125em;
   height: 1.125em;
-  margin-right: 0.125em;
   vertical-align: middle;
 }
 
@@ -123,7 +125,7 @@ h2 {
   border-bottom: 2px solid var(--color-accent);
   text-transform: uppercase;
   font-size: 1.25rem;
-  margin: 1.5rem 0 0 0;
+  margin: 1.5rem 0 1rem 0;
   padding: 0;
   color: var(--color-text);
   letter-spacing: 0.2rem;
@@ -172,7 +174,7 @@ ul {
   margin: 0.25rem 1rem;
 }
 
-#header > div * {
+#header > div div {
   margin: 0.125rem;
 }
 
@@ -187,11 +189,6 @@ ul {
 
 #contact div {
   margin: 0.125rem 1rem;
-}
-
-#summary {
-  text-align: left;
-  margin-top: 1.25rem;
 }
 
 #skills {

@@ -14,7 +14,7 @@ class Watcher:
     def run(self):
         event_handler = Handler()
         self.observer.schedule(
-            event_handler, self.DIRECTORY_TO_WATCH, recursive=False)
+            event_handler, self.DIRECTORY_TO_WATCH, recursive=True)
         self.observer.start()
         try:
             while True:
@@ -40,11 +40,27 @@ class Handler(FileSystemEventHandler):
                 # Split the file path into the root and extension
                 root, ext = os.path.splitext(event.src_path)
                 # Change the extension to .md
-                new_path = root + ".md"
+                md_path = root + ".md"
 
                 print(f'{event.src_path} updated. Running resume.py')
-                subprocess.run(
-                    ["python", "resume.py", new_path], check=True)
+
+                # Get the directory of the modified file
+                file_dir = os.path.dirname(md_path)
+
+                # Change to the directory of the modified file
+                original_dir = os.getcwd()
+                os.chdir(file_dir)
+
+                # Run the resume.py script
+                try:
+                    subprocess.run(
+                        ["python", os.path.join(
+                            original_dir, "resume.py"), os.path.basename(md_path)],
+                        check=True
+                    )
+                finally:
+                    # Change back to the original directory
+                    os.chdir(original_dir)
 
 
 if __name__ == '__main__':
