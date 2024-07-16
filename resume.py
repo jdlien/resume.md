@@ -223,6 +223,12 @@ def generate_techs_label(variables: dict = {}) -> str:
     """.strip()
 
 
+def generate_page_break() -> str:
+    return r"""
+    <div style="page-break-after: always;"></div>
+    """.strip()
+
+
 def replace_placeholders(md: str, variables: dict = {}) -> str:
     """
     Replace any placeholder strings for labels in the provided markdown content.
@@ -231,6 +237,7 @@ def replace_placeholders(md: str, variables: dict = {}) -> str:
     md = md.replace("{{CONTACT}}", generate_contact(variables))
     md = md.replace("{{LANGS_LABEL}}", generate_langs_label(variables))
     md = md.replace("{{TECHS_LABEL}}", generate_techs_label(variables))
+    md = md.replace("{{PAGE_BREAK}}", generate_page_break())
     return md
 
 

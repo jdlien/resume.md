@@ -2,7 +2,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JD Lien</title>
+<title>Resume</title>
 <style>
 :root {
   --color-accent: hsl(306, 100%, 33%);
@@ -34,8 +34,10 @@ body {
 
 .icon {
   display: inline-block;
+  padding-bottom: 0.015em;
+  
+  padding-right: 0.125em;
   height: 1.125em;
-  margin-right: 0.125em;
   vertical-align: middle;
 }
 
@@ -128,7 +130,7 @@ h2 {
   border-bottom: 2px solid var(--color-accent);
   text-transform: uppercase;
   font-size: 1.25rem;
-  margin: 1.5rem 0 0 0;
+  margin: 1.5rem 0 1rem 0;
   padding: 0;
   color: var(--color-text);
   letter-spacing: 0.2rem;
@@ -177,7 +179,7 @@ ul {
   margin: 0.25rem 1rem;
 }
 
-#header > div * {
+#header > div div {
   margin: 0.125rem;
 }
 
@@ -192,11 +194,6 @@ ul {
 
 #contact div {
   margin: 0.125rem 1rem;
-}
-
-#summary {
-  text-align: left;
-  margin-top: 1.25rem;
 }
 
 #skills {
@@ -446,7 +443,7 @@ Senior software engineer and technical writer with 10+ years of experience in fu
   </table>
 </div>
 
-<div class="page-break"></div>
+<div style="page-break-after: always;"></div>
 
 <h3><span>Web Developer</span> <span>Apr 2012 &ndash; Nov 2019</span></h3>
 <h3><span>Edmonton Public Library</span> <span>(Edmonton, Canada)</span></h3>
@@ -531,7 +528,8 @@ Senior software engineer and technical writer with 10+ years of experience in fu
 <p>Developed requirements gathering, project documentation, and quality assurance skills.</p>
 <h3><span>Cisco Certified Network Associate (CCNA)</span> <span>2007</span></h3>
 <p>Certified in networking fundamentals, routing, switching, and Cisco IOS administration.</p>
-<div class="page-break"></div>
+<div style="page-break-after: always;"></div>
+
 <h2>Projects</h2>
 <h3><a href="https://www.npmjs.com/package/@jdlien/validator">Validator NPM Package</a></h3>
 <p>To improve the UX of forms, I created an NPM package, <a href="https://github.com/jdlien/validator/">@jdlien/validator on Github</a>, that makes it easy to add powerful frontend validation to forms. This lets users do things like type anything resembling a date and have it magically reformatted the way the developer wants. It has no dependencies, is thoroughly tested (100% code coverage with Vitest), is well-documented, and is easy to use for developers and users alike.</p>

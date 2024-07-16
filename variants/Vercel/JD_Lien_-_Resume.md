@@ -17,7 +17,7 @@ $linkedin: https://www.linkedin.com/in/jdlien/
 
 <!-- Vercel version -->
 
-Senior software engineer and technical writer with 10+ years of experience in full-stack development using PHP, Laravel, TypeScript, and more. Successfully led team to deliver enterprise applications and modernize large, legacy systems. Demonstrated ability to translate complex technical concepts into accessible content, consistently improving documentation quality and developer experience. Adept at collaborating to ensure accurate, up-to-date, and accessible documentation that drives product adoption and user satisfaction.
+Senior software engineer and technical writer with 10+ years of experience in full-stack development using PHP, Laravel, TypeScript, and more. Successfully led team to deliver enterprise applications and modernize large, legacy systems. Demonstrated ability to translate complex technical concepts into accessible content, consistently improving documentation quality and developer experience. Adept at collaborating to ensure accurate, up-to-date, and understandable documentation that drives product adoption and user satisfaction.
 
 ## Experience
 
@@ -55,7 +55,7 @@ Senior software engineer and technical writer with 10+ years of experience in fu
 
 ### <span>Lead Web Developer</span> <span>Nov 2019 -- Apr 2024</span>
 
-### <span>Edmonton Public Library</span> <span>(Edmonton, Canada/Remote)</span>
+### <span>Edmonton Public Library</span> <span>(Edmonton, Canada /// Remote)</span>
 
 - Conceived and led a successful long-term project to migrate all existing applications to Laravel and Vue.js from a legacy ColdFusion intranet with 60+ apps, enhancing robustness, user experience, and maintainability.
 
@@ -84,7 +84,8 @@ Senior software engineer and technical writer with 10+ years of experience in fu
 </div>
 
 <!-- Add Page Break for Print -->
-<div class="page-break"></div>
+
+{{PAGE_BREAK}}
 
 ### <span>Web Developer</span> <span>Apr 2012 -- Nov 2019</span>
 
@@ -118,7 +119,7 @@ Senior software engineer and technical writer with 10+ years of experience in fu
 
 ### <span>Freelance Developer /// Systems Administrator</span> <span>Sep 2011 -- Apr 2012</span>
 
-### <span>FullSpec Systems</span> <span>(Edmonton, Canada/Remote)</span>
+### <span>FullSpec Systems</span> <span>(Edmonton, Canada /// Remote)</span>
 
 - Developed web applications for small businesses.
 
@@ -199,7 +200,8 @@ Developed requirements gathering, project documentation, and quality assurance s
 
 Certified in networking fundamentals, routing, switching, and Cisco IOS administration.
 
-<div class="page-break"></div>
+{{PAGE_BREAK}}
+
 ## Projects
 
 ### [Validator NPM Package](https://www.npmjs.com/package/@jdlien/validator)

@@ -1,38 +1,54 @@
 name: build
 
 on:
-    workflow_dispatch:
-    pull_request:
-    push:
+  workflow_dispatch: # Allows manual triggering
+  push:
+    branches: [main]
+    paths:
+      - "**.md"
+      - "!README.md"
+      - "**.css"
+      - "resume.py"
 
 jobs:
   build:
-    if: github.repository == 'mikepqr/resume.md'
-    runs-on: ${{ matrix.os }}
-    strategy:
-        fail-fast: false
-        matrix:
-            os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ubuntu-latest
+
     steps:
-    - name: Check out repo
-      uses: actions/checkout@v2
-    - name: Install markdown
-      run: pip3 install markdown
-    - name: Make resume
-      run: python3 resume.py --debug
-    - name: Rename output
-      if: ${{ matrix.os != 'windows-latest' }}
-      run: |
-          mv resume.pdf resume_$RUNNER_OS.pdf
-          mv resume.html resume_$RUNNER_OS.html
-    - name: Rename output (Windows)
-      if: ${{ matrix.os == 'windows-latest' }}
-      run: |
-          mv resume.pdf resume_windows.pdf
-          mv resume.html resume_windows.html
-    - name: Archive resume.html and resume.pdf
-      uses: actions/upload-artifact@v2
-      with:
-          path: |
-              *.pdf
-              *.html
+      - uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install markdown
+
+      - name: Install Chrome
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+
+      - name: Generate Resumes
+        run: |
+          for file in *.md; do
+            if [ "$file" != "README.md" ]; then
+              python resume.py "$file"
+            fi
+          done
+
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add *.html *.pdf
+          git commit -m "Update generated resume files" -a || echo "No changes to commit"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}

@@ -102,8 +102,7 @@ Versatile senior software engineer combining technical expertise with a passion 
   </table>
 </div>
 
-<!-- Add Page Break for Print -->
-<div class="page-break"></div>
+{{PAGE_BREAK}}
 
 ### <span>Web Developer</span> <span>Apr 2012 -- Nov 2019</span>
 
@@ -218,7 +217,8 @@ Developed requirements gathering, project documentation, and quality assurance s
 
 Certified in networking fundamentals, routing, switching, and Cisco IOS administration.
 
-<div class="page-break"></div>
+{{PAGE_BREAK}}
+
 ## Projects
 
 ### [Validator NPM Package](https://www.npmjs.com/package/@jdlien/validator)
